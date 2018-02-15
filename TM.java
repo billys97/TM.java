@@ -264,8 +264,8 @@ class SummarizeTask {
                   long time1 = Long.parseLong(time[x]);
                   long time2 = Long.parseLong(time[counter]);
                   
-                  String dif = difference(time1, time2);
-                  System.out.println("Total elapsed time: " + dif);
+                  //String dif = difference(time1, time2);
+                  //System.out.println("Total elapsed time: " + dif);
                     
                     
                }
@@ -291,8 +291,8 @@ class SummarizeTask {
       }
          
    }
-   
-   
+//Commenting out time difference method to fix later.   
+/*   
    public String difference(long time1, long time2) {
    
       long difference = time2 - time1;
@@ -305,7 +305,8 @@ class SummarizeTask {
       return "Days: " + day + " Hours: " + hrs + " Minutes: " + min + " Seconds: " + sec;   
    
    
-   }   
+   }
+*/
 }   
 
 
