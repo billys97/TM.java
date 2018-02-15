@@ -30,6 +30,7 @@ public class TM {
       String cmd = args[0];
       String data = null;
       String description = null;
+      String sizes = null;
        
       if ("begin".equals(cmd)) {
       
@@ -68,6 +69,16 @@ public class TM {
       
          Log text = new Log();
          text.file();
+      
+      }
+      
+      else if ("size".equals(cmd)) {
+      
+         Size size = new Size();
+         data = args[1];
+         sizes = args[2];
+         size.sizes(cmd, data, sizes);
+      
       
       }
    }  
@@ -189,6 +200,18 @@ class Describe {
 
    }
    
+}
+
+class Size {
+
+   public void sizes(String a, String b, String c) {
+   
+         Writer size = new Writer();
+         size.write(a, b, c);
+   
+   }
+
+
 }
 
 class SummarizeTask {
